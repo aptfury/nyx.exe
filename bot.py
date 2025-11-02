@@ -19,5 +19,10 @@ bot = commands.Bot(
     help_command=None
 )
 
-bot.load_extension("cogs.utility")
+for filename in os.listdir("cogs"):
+    if filename.endswith(".py") and not filename.startswith("__"):
+        bot.load_extension(f"cogs.{filename[:-3]}")
+        print(f"Loaded {filename}")
+
+# bot.load_extension("cogs.utility")
 bot.run(token)
