@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
-import asyncio
 
 # Get Bot Token
 load_dotenv() # Lods all variables from the env file
