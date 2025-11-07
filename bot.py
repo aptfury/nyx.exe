@@ -19,14 +19,6 @@ bot = commands.Bot(
 )
 
 # --------------------------
-# Events
-# --------------------------
-@bot.event
-async def on_ready():
-    print(f"Logged in as {bot.user} ({bot.user.id})")
-    print("------")
-
-# --------------------------
 # Automatic cog loader
 # --------------------------
 cogs_dir = "cogs"
