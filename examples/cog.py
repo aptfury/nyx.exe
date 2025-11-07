@@ -42,7 +42,7 @@ class Greetings(commands.Cog):
     async def midpoint(self, ctx, x1: float, y1: float, x2: float, y2: float):
         mid_x = (x1 + x2)/2
         mid_y = (y1 + y2)/2
-        await ctx.respond(f"The midpoint between those coordinates is ({mix_x, {mid_y}})")
+        await ctx.respond(f"The midpoint between those coordinates is ({mid_x, {mid_y}})")
 
     @commands.Cog.listener()
     async def on_member_join(self, member): # Listener that activates when someone joins
